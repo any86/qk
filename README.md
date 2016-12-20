@@ -1,5 +1,6 @@
 # _qk   
-####mvvm框架都不建议操作dom，但是为了设计某些动画和交互还是需要读取一些dom数据，为了让mvvm中写的代码看起来更“干净”，所以封装了一些常用的dom信息，方便使用。
+
+mvvm框架都不建议操作dom，但是为了设计某些动画和交互还是需要读取一些dom数据，为了让mvvm中写的代码看起来更“干净”，所以封装了一些常用的dom信息，方便使用。
 
 ```javascript
 /*
@@ -31,7 +32,8 @@ _qk.getD = _qk.getDistance = (dom1, dom2) => {
 _qk.getW = _qk.getWidth = (obj) => {
     if(undefined == obj || obj.window === window) {
         return window.innerWidth;
-    } else {
+
+} else {
         return obj.getBoundingClientRect().width;
     }
 
